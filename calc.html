@@ -1,0 +1,47 @@
+<!--Make a simple program to only add numbers together-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Simple Calculator
+  </title>
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="containerDiv">
+    <div class="displayDiv">
+      <input type="text" id="statement" class="result">
+      <div class="result" id="display">
+      </div>
+      <button id="eval">Ans</button>
+    </div>
+
+    <button class="digit" onclick="dispNum(1)">1</span>
+    <button class="digit" onclick="dispNum(2)">2</span>
+    <button class="digit" onclick="dispNum(3)">3</span>
+    <button class="digit" onclick="delLast(-1)">D</span>
+
+
+    <button class="digit" onclick="dispNum(4)">4</span>
+    <button class="digit" onclick="dispNum(5)">5</span>
+    <button class="digit" onclick="dispNum(6)">6</span>
+    <button class="digit" onclick="clearDisp()">C</span>
+
+
+
+    <button class="digit" onclick="dispNum(7)">7</span>
+    <button class="digit" onclick="dispNum(8)">8</span>
+    <button class="digit" onclick="dispNum(9)">9</span>
+    <button class="digit" onclick="dispNum('+')">+</span>
+
+
+    <button class="digit" onclick="dispNum(0)">0</span>
+    <button class="digit" onclick="dispNum('/')">/</span>
+    <button class="digit" onclick="dispNum('*')">*</span>
+    <button class="digit" onclick="dispNum('-')">-</span>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
