@@ -9,39 +9,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  
   <div class="containerDiv">
     <div class="displayDiv">
-      <input type="text" id="statement" class="result">
+      <input type="text" id="statement" class="statement" disabled>
       <div class="result" id="display">
+        0
       </div>
-      <button id="eval">Ans</button>
     </div>
+    
+    <div class="grid">
+      
+      <button class="digit" onclick="dispNum('+')">+</button>
+      <button class="digit" onclick="dispNum('-')">-</button>
+      <button class="digit" onclick="dispNum('*')">*</button>
+      <button class="digit" onclick="dispNum('/')">/</button>
 
-    <button class="digit" onclick="dispNum(1)">1</span>
-    <button class="digit" onclick="dispNum(2)">2</span>
-    <button class="digit" onclick="dispNum(3)">3</span>
-    <button class="digit" onclick="delLast(-1)">D</span>
+      <button class="digit" onclick="dispNum(7)">7</button>
+      <button class="digit" onclick="dispNum(8)">8</button>
+      <button class="digit" onclick="dispNum(9)">9</button>
+      <button class="digit" onclick="delLast(1)">Del</button>
+
+      <button class="digit" onclick="dispNum(4)">4</button>
+      <button class="digit" onclick="dispNum(5)">5</button>
+      <button class="digit" onclick="dispNum(6)">6</button>
+      <button class="digit" onclick="dispNum('(')">(</button>
 
 
-    <button class="digit" onclick="dispNum(4)">4</span>
-    <button class="digit" onclick="dispNum(5)">5</span>
-    <button class="digit" onclick="dispNum(6)">6</span>
-    <button class="digit" onclick="clearDisp()">C</span>
+      <button class="digit" onclick="dispNum(1)">1</button>
+      <button class="digit" onclick="dispNum(2)">2</button>
+      <button class="digit" onclick="dispNum(3)">3</button>
+      <button class="digit" onclick="dispNum(')')">)</button>
 
-
-
-    <button class="digit" onclick="dispNum(7)">7</span>
-    <button class="digit" onclick="dispNum(8)">8</span>
-    <button class="digit" onclick="dispNum(9)">9</span>
-    <button class="digit" onclick="dispNum('+')">+</span>
-
-
-    <button class="digit" onclick="dispNum(0)">0</span>
-    <button class="digit" onclick="dispNum('/')">/</span>
-    <button class="digit" onclick="dispNum('*')">*</span>
-    <button class="digit" onclick="dispNum('-')">-</span>
+      <button class="digit" onclick="clearDisp()">AC</button>
+      <button class="digit" onclick="dispNum('0')">0</button>
+      <button class="digit" onclick="dispNum('.')">.</button>
+      <button id="eval" class="digit equal">=</button>
+      
+    </div>
   </div>
+  
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

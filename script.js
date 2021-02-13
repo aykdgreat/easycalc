@@ -16,4 +16,10 @@ function dispNum(num) {
 
 function clearDisp() {
   statement.value = "";
+  display.innerHTML = "0";
+}
+function delLast() {
+  let val = statement.value
+  let test = val.slice(0, -1)
+  statement.value = test
 }
